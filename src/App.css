@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+
+/* styling for component */
+
+.fun{
+  color: red;
+  background-color: green;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
