@@ -5,6 +5,12 @@
 
 /* styling for component */
 
+/* style for routing */
+
+.active{
+  color: green;
+}
+
 .fun{
   color: red;
   background-color: green;

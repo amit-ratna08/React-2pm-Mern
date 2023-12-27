@@ -1,22 +1,20 @@
 import React from 'react'
-import FunCompo from './Component/FunCompo';
-import ClassCompo from './Component/ClassCompo';
-let na="hdjshd"
-let obkj={
-  name:"abcd"
-}
-let arr=[1,2,3,4]
-function App() {
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import Navbar from './Navbar'
+const App = () => {
   return (
     <div>
-      <h1>hello app</h1>
-     
-
-     <FunCompo name={arr} />
-     {/* <ClassCompo value={"hwh"} /> */}
+      <BrowserRouter>
+      <Navbar />
+         <Routes>
+            <Route path='/' element={<h1>HOME PAGE</h1>} />
+            <Route path='/about' element={<h1>ABOUT PAGE</h1>} />
+            <Route path='/contect' element={<h1>CONTECT PAGE</h1>} />
+         </Routes>
+      </BrowserRouter>
     </div>
- 
-  );
+  )
 }
 
-export default App;
+
+export default App
