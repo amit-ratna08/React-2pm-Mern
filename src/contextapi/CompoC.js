@@ -1,5 +1,5 @@
 import React from 'react'
-import { fname,lname } from '../App'
+import { fname,lname } from './App'
 
 const CompoC = () => {
   return (

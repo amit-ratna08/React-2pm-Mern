@@ -1,22 +1,17 @@
-import React, { createContext } from 'react'
-import CompoA from './contextapi/CompoA'
+import React from 'react'
+import ControllCompo from './form/ControllCompo'
+import UnControllCompo from './form/UnControllCompo'
 
-
-let fname=createContext()
-let lname=createContext()
 const App = () => {
   return (
     <div>
-        <fname.Provider value={"HELLO"}>
-            <lname.Provider value={"welcome"}>
-               <CompoA  />
+      <h1>App Component</h1>
+      {/* <ControllCompo /> */}
+      <UnControllCompo />
 
-            </lname.Provider>
 
-        </fname.Provider>
     </div>
   )
 }
 
 export default App
-export {fname,lname}
