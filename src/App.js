@@ -1,14 +1,16 @@
 import React from 'react'
-import OnclickCompo from './HOC/OnclickCompo'
-import OnmouseCompo from './HOC/OnmouseCompo'
-import OnkewydownCompo from './HOC/OnkewydownCompo'
+import LiftingCompo from './Liftingup/LiftingCompo'
 
 const App = () => {
+    let name="rahul"
+
+
+    function sum(ab){
+        alert("hello"+ab)
+    }
   return (
     <div>
-      <OnclickCompo />
-      <OnmouseCompo />
-      <OnkewydownCompo />
+      <LiftingCompo  data={sum} />
     </div>
   )
 }
